@@ -7,7 +7,11 @@
 Links
 -----
 
-Here are the important files: - [the new box-cox function file](https://github.com/STAT545-UBC-students/hw07-rning-wu/blob/master/R/boxcox.r) - [the vignette](https://github.com/STAT545-UBC-students/hw07-rning-wu/blob/master/vignettes/using_boxcox.Rmd) - [the test cases](https://github.com/STAT545-UBC-students/hw07-rning-wu/blob/master/tests/testthat/test_boxcox.R)
+Here are the important files:
+
+-   [the new box-cox function file](https://github.com/STAT545-UBC-students/hw07-rning-wu/blob/master/R/boxcox.r)
+-   [the vignette](https://github.com/STAT545-UBC-students/hw07-rning-wu/blob/master/vignettes/using_boxcox.Rmd)
+-   [the test cases](https://github.com/STAT545-UBC-students/hw07-rning-wu/blob/master/tests/testthat/test_boxcox.R)
 
 References
 ----------
