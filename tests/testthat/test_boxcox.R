@@ -24,8 +24,8 @@ test_that("lambda = -4 case", {
     expect_equal(boxcox(x, lambda), (c(6,32,5,1,42,2)^(-4)-1)/(-4))
 })
 
-test_that("Curtis's failing case", {
-    x <- c(1,2,3)
+test_that("test with output explicitly defined", {
+    x <- c(3,4,5)
     lambda = -1;
-    expect_equal(boxcox(x, lambda), c(0, 1/2, 2/3))
+    expect_equal(boxcox(x, lambda), c(2/3,3/4,4/5))
 })
