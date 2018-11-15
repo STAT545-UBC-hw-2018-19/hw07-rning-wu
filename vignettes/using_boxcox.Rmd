@@ -1,0 +1,42 @@
+---
+title: "Using `boxcox`"
+author: "Ray Wu"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+__Note__: This package isn't actually meant to be "serious". I made it just for teaching purposes.
+
+This package is intended to be a learning exercise for building and modifying packages in `R`. 
+
+```{r}
+library(powers)
+```
+
+This package's `boxcox` function performs a Box-Cox transform. 
+
+```{r}
+x = 1:10
+lambda = 2
+boxcox(x, lambda)
+```
+
+It comes built-in with a plotting option too (disabled by default): 
+
+```{r}
+x = 1:10
+lambda = 2
+boxcox(x, lambda, plot=TRUE)
+```
+

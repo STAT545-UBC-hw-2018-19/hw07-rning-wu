@@ -14,11 +14,19 @@ knitr::opts_chunk$set(
 
 [![Build Status](https://travis-ci.org/vincenzocoia/powers.svg?branch=master)](https://travis-ci.org/vincenzocoia/powers)
 
-__Note__: This R package is not mean to be "serious". It's just for teaching purposes. 
+__Note__: This R package is not mean to be "serious". It's just for ~~teaching~~ **learning** purposes. 
 
-# powers
+## References
+
+This package is based off of Vincenzo's package [powers](https://github.com/vincenzocoia/powers)
+
+## powers
 
 This is an R package that gives `sqrt()` friends by providing other power functions.
+
+## boxcox
+
+This package also allows the easy use of the [box-cox transform](https://en.wikipedia.org/wiki/Power_transform#Box%E2%80%93Cox_transformation). 
 
 ## Installation
 
@@ -26,19 +34,24 @@ You can install powers from github with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("vincenzocoia/powers")
+devtools::install_github("rning-wu/rning-wu-hw07")
 ```
 
 ## Example
 
 See the vignette for more extensive use, but here's an example:
 
-```{r example}
+```{r example-reciprocal}
 powers::reciprocal(2)
 ```
 
-## For Developers
+And here's an example of the box-cox function: 
 
-(Again, I don't actually intend for anyone to develop this silly package, but if I did, here's what I'd write.)
+```{r example-boxcox}
+powers::boxcox(c(1,2,3,4),lambda=10,plot=TRUE)
+```
+
+
+## For Developers
 
 Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, and `reciprocal`. 
