@@ -16,6 +16,12 @@ knitr::opts_chunk$set(
 
 __Note__: This R package is not mean to be "serious". It's just for ~~teaching~~ **learning** purposes. 
 
+## Links
+
+Here are the important files: 
+- [the new box-cox function file](https://github.com/STAT545-UBC-students/hw07-rning-wu/blob/master/R/boxcox.r)
+- [the vignette](https://github.com/STAT545-UBC-students/hw07-rning-wu/blob/master/vignettes/using_boxcox.Rmd)
+
 ## References
 
 This package is based off of Vincenzo's package [powers](https://github.com/vincenzocoia/powers)
