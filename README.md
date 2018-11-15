@@ -4,6 +4,11 @@
 
 **Note**: This R package is not mean to be "serious". It's just for ~~teaching~~ **learning** purposes.
 
+Links
+-----
+
+Here are the important files: - [the new box-cox function file](https://github.com/STAT545-UBC-students/hw07-rning-wu/blob/master/R/boxcox.r) - [the vignette](https://github.com/STAT545-UBC-students/hw07-rning-wu/blob/master/vignettes/using_boxcox.Rmd) - [the test cases](https://github.com/STAT545-UBC-students/hw07-rning-wu/blob/master/tests/testthat/test_boxcox.R)
+
 References
 ----------
 
@@ -26,8 +31,25 @@ You can install powers from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("vincenzocoia/powers")
+devtools::install_github("STAT545-UBC-students/hw07-rning-wu")
 ```
+
+Importing
+---------
+
+Use the line
+
+``` r
+library(powers)
+```
+
+to import the library. Then you can use
+
+``` r
+?boxcox
+```
+
+to see the documentation.
 
 Example
 -------
